@@ -1,7 +1,7 @@
 {
-  "name": "whatsapp-conveter",
-  "version": "0.0.4",
-  "description": "Convert number to whatsapp number and add some descriptión to your message",
+  "name": "whatsapp-link",
+  "version": "1.0.0",
+  "description": "Build WhatsApp click-to-chat links (wa.me, api.whatsapp.com) and app deep links for iOS, Android and desktop, with a prefilled message. Zero dependencies. Not affiliated with WhatsApp.",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -18,19 +18,34 @@
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run build && node --test"
   },
   "keywords": [
-    "wa.me, whatsapp",
-    "number",
-    "tel",
-    "whatsapp converter",
-    "WhatsApp phone number",
-    "whatsapp formatter",
-    "whatsapp number formatter"
+    "whatsapp",
+    "wa.me",
+    "api.whatsapp.com",
+    "whatsapp link",
+    "click to chat",
+    "whatsapp url",
+    "deep link",
+    "deeplink",
+    "android intent",
+    "whatsapp message",
+    "phone number",
+    "share",
+    "url builder",
+    "typescript"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattEzekiel/wa-converter.git"
+  },
+  "homepage": "https://github.com/MattEzekiel/wa-converter#readme",
+  "bugs": {
+    "url": "https://github.com/MattEzekiel/wa-converter/issues"
+  },
   "author": "Matías Bubello",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "typescript": "^7.0.2"
   }
